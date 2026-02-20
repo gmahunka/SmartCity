@@ -1,0 +1,89 @@
+Country Name,ISO3 Code,ISO2 Code,Area Code,EIC Code,Description,Timezone
+Austria,AUT,AT,AT,10YAT-APG------L,Austria - APG BZ / CA / MBA,Europe/Vienna
+Albania,ALB,AL,AL,10YAL-KESH-----5,Albania - OST BZ / CA / MBA,Europe/Tirane
+Belarus,BLR,BY,BY,10Y1001A1001A51S,Belarus BZ / CA / MBA,Europe/Minsk
+Belgium,BEL,BE,BE,10YBE----------2,Belgium - Elia BZ / CA / MBA,Europe/Brussels
+Bosnia and Herzegovina,BIH,BA,BA,10YBA-JPCC-----D,Bosnia Herzegovina - NOS BiH BZ / CA / MBA,Europe/Sarajevo
+Bulgaria,BGR,BG,BG,10YCA-BULGARIA-R,Bulgaria - ESO BZ / CA / MBA,Europe/Sofia
+Switzerland,CHE,CH,CH,10YCH-SWISSGRIDZ,Switzerland - Swissgrid BZ / CA / MBA,Europe/Zurich
+Cyprus,CYP,CY,CY,10YCY-1001A0003J,Cyprus - Cyprus TSO BZ / CA / MBA,Asia/Nicosia
+Czech Republic,CZE,CZ,CZ,10YCZ-CEPS-----N,Czech Republic - CEPS BZ / CA / MBA,Europe/Prague
+Germany,DEU,DE,DE,10Y1001A1001A83F,Germany,Europe/Berlin
+Germany,DEU,DE,DE_50HZ,10YDE-VE-------2,Germany (50HZ) - 50Hertz CA - DE(50HzT) BZA,Europe/Berlin
+Germany,DEU,DE,DE_AMPRION,10YDE-RWENET---I,Germany (Amprion) - Amprion CA,Europe/Berlin
+Germany,DEU,DE,DE_TENNET,10YDE-EON------1,Germany (TenneT) - TenneT GER CA,Europe/Berlin
+Germany,DEU,DE,DE_TRANSNET,10YDE-ENBW-----N,Germany (TransnetBW) - TransnetBW CA,Europe/Berlin
+Germany-Austria-Luxembourg,Multiple,DE/AT/LU,DE_AT_LU,10Y1001A1001A63L,DE-AT-LU BZ,Europe/Berlin
+Germany-Luxembourg,Multiple,DE/LU,DE_LU,10Y1001A1001A82H,DE-LU BZ / MBA,Europe/Berlin
+Denmark,DNK,DK,DK,10Y1001A1001A65H,Denmark,Europe/Copenhagen
+Denmark,DNK,DK,DK_1,10YDK-1--------W,Denmark (DK1) - DK1 BZ / MBA,Europe/Copenhagen
+Denmark,DNK,DK,DK_2,10YDK-2--------M,Denmark (DK2) - DK2 BZ / MBA,Europe/Copenhagen
+Denmark,DNK,DK,DK_CA,10Y1001A1001A796,Denmark - Energinet CA,Europe/Copenhagen
+Estonia,EST,EE,EE,10Y1001A1001A39I,Estonia - Elering BZ / CA / MBA,Europe/Tallinn
+Spain,ESP,ES,ES,10YES-REE------0,Spain - REE BZ / CA / MBA,Europe/Madrid
+Finland,FIN,FI,FI,10YFI-1--------U,Finland - Fingrid BZ / CA / MBA,Europe/Helsinki
+France,FRA,FR,FR,10YFR-RTE------C,France - RTE BZ / CA / MBA,Europe/Paris
+United Kingdom,GBR,GB,GB,10YGB----------A,United Kingdom - National Grid BZ / CA / MBA,Europe/London
+United Kingdom,GBR,GB,GB_IFA,10Y1001C--00098F,United Kingdom (IFA) - GB(IFA) BZN,Europe/London
+United Kingdom,GBR,GB,GB_IFA2,17Y0000009369493,United Kingdom (IFA2) - GB(IFA2) BZ,Europe/London
+United Kingdom,GBR,GB,GB_ELECLINK,11Y0-0000-0265-K,United Kingdom (ElecLink) - GB(ElecLink) BZN,Europe/London
+United Kingdom,GBR,GB,UK,10Y1001A1001A92E,United Kingdom,Europe/London
+Georgia,GEO,GE,GE,10Y1001A1001B012,Georgia,Asia/Tbilisi
+Greece,GRC,GR,GR,10YGR-HTSO-----Y,Greece - IPTO BZ / CA / MBA,Europe/Athens
+Croatia,HRV,HR,HR,10YHR-HEP------M,Croatia - HOPS BZ / CA / MBA,Europe/Zagreb
+Hungary,HUN,HU,HU,10YHU-MAVIR----U,Hungary - MAVIR CA / BZ / MBA,Europe/Budapest
+Iceland,ISL,IS,IS,IS,Iceland,Atlantic/Reykjavik
+Ireland,IRL,IE,IE,10YIE-1001A00010,Ireland - EirGrid CA,Europe/Dublin
+Ireland,IRL,IE,IE_SEM,10Y1001A1001A59C,Ireland (SEM) - Ireland (SEM) BZ / MBA,Europe/Dublin
+Northern Ireland,GBR,GB,NIE,10Y1001A1001A016,Northern Ireland - SONI CA,Europe/London
+Italy,ITA,IT,IT,10YIT-GRTN-----B,Italy - IT CA / MBA,Europe/Rome
+Italy,ITA,IT,IT_CALA,10Y1001C--00096J,Italy (Calabria) - IT-Calabria BZ,Europe/Rome
+Italy,ITA,IT,IT_BRNN,10Y1001A1001A699,Italy (Brindisi) - IT-Brindisi BZ,Europe/Rome
+Italy,ITA,IT,IT_CNOR,10Y1001A1001A70O,Italy (Centre-North) - IT-Centre-North BZ,Europe/Rome
+Italy,ITA,IT,IT_CSUD,10Y1001A1001A71M,Italy (Centre-South) - IT-Centre-South BZ,Europe/Rome
+Italy,ITA,IT,IT_FOGN,10Y1001A1001A72K,Italy (Foggia) - IT-Foggia BZ,Europe/Rome
+Italy,ITA,IT,IT_GR,10Y1001A1001A66F,Italy (Greece) - IT-GR BZ,Europe/Rome
+Italy,ITA,IT,IT_NORD,10Y1001A1001A73I,Italy (North) - IT-North BZ,Europe/Rome
+Italy,ITA,IT,IT_NORD_AT,10Y1001A1001A80L,Italy (North-AT) - IT-North-AT BZ,Europe/Rome
+Italy,ITA,IT,IT_NORD_CH,10Y1001A1001A68B,Italy (North-CH) - IT-North-CH BZ,Europe/Rome
+Italy,ITA,IT,IT_NORD_FR,10Y1001A1001A81J,Italy (North-FR) - IT-North-FR BZ,Europe/Rome
+Italy,ITA,IT,IT_NORD_SI,10Y1001A1001A67D,Italy (North-SI) - IT-North-SI BZ,Europe/Rome
+Italy,ITA,IT,IT_PRGP,10Y1001A1001A76C,Italy (Priolo) - IT-Priolo BZ,Europe/Rome
+Italy,ITA,IT,IT_ROSN,10Y1001A1001A77A,Italy (Rossano) - IT-Rossano BZ,Europe/Rome
+Italy,ITA,IT,IT_SARD,10Y1001A1001A74G,Italy (Sardinia) - IT-Sardinia BZ,Europe/Rome
+Italy,ITA,IT,IT_SICI,10Y1001A1001A75E,Italy (Sicily) - IT-Sicily BZ,Europe/Rome
+Italy,ITA,IT,IT_SUD,10Y1001A1001A788,Italy (South) - IT-South BZ,Europe/Rome
+Kaliningrad (Russia),RUS,RU,RU_KGD,10Y1001A1001A50U,Kaliningrad BZ / CA / MBA,Europe/Kaliningrad
+Latvia,LVA,LV,LV,10YLV-1001A00074,Latvia - AST BZ / CA / MBA,Europe/Riga
+Lithuania,LTU,LT,LT,10YLT-1001A0008Q,Lithuania - Litgrid BZ / CA / MBA,Europe/Vilnius
+Luxembourg,LUX,LU,LU,10YLU-CEGEDEL-NQ,Luxembourg - CREOS CA,Europe/Luxembourg
+Luxembourg,LUX,LU,LU_BZN,10Y1001A1001A82H,Luxembourg,Europe/Luxembourg
+North Macedonia,MKD,MK,MK,10YMK-MEPSO----8,North Macedonia - Former Yugoslav Republic of Macedonia - MEPSO BZ / CA / MBA,Europe/Skopje
+Malta,MLT,MT,MT,10Y1001A1001A93C,Malta - Malta BZ / CA / MBA,Europe/Malta
+Montenegro,MNE,ME,ME,10YCS-CG-TSO---S,Montenegro - CGES BZ / CA / MBA,Europe/Podgorica
+Moldova,MDA,MD,MD,10Y1001A1001A990,Republic of Moldova - Moldelectica BZ/CA/MBA,Europe/Chisinau
+Netherlands,NLD,NL,NL,10YNL----------L,Netherlands - TenneT NL BZ / CA / MBA,Europe/Amsterdam
+Norway,NOR,NO,NO,10YNO-0--------C,Norway - Norway MBA - Stattnet CA,Europe/Oslo
+Norway,NOR,NO,NO_1,10YNO-1--------2,Norway (NO1) - NO1 BZ / MBA,Europe/Oslo
+Norway,NOR,NO,NO_2,10YNO-2--------T,Norway (NO2) - NO2 BZ / MBA,Europe/Oslo
+Norway,NOR,NO,NO_3,10YNO-3--------J,Norway (NO3) - NO3 BZ / MBA,Europe/Oslo
+Norway,NOR,NO,NO_4,10YNO-4--------9,Norway (NO4) - NO4 BZ / MBA,Europe/Oslo
+Norway,NOR,NO,NO_5,10Y1001A1001A48H,Norway (NO5) - NO5 BZ / MBA,Europe/Oslo
+Poland,POL,PL,PL,10YPL-AREA-----S,Poland - PSE SA BZ / BZA / CA / MBA,Europe/Warsaw
+Portugal,PRT,PT,PT,10YPT-REN------W,Portugal - REN BZ / CA / MBA,Europe/Lisbon
+Romania,ROU,RO,RO,10YRO-TEL------P,Romania - Transelectrica BZ / CA / MBA,Europe/Bucharest
+Russia,RUS,RU,RU,10Y1001A1001A49F,Russia BZ / CA / MBA,Europe/Moscow
+Serbia,SRB,RS,RS,10YCS-SERBIATSOV,Serbia - EMS BZ / CA / MBA,Europe/Belgrade
+Sweden,SWE,SE,SE,10YSE-1--------K,Sweden - Sweden MBA - SvK CA,Europe/Stockholm
+Sweden,SWE,SE,SE_1,10Y1001A1001A44P,Sweden (SE1) - SE1 BZ / MBA,Europe/Stockholm
+Sweden,SWE,SE,SE_2,10Y1001A1001A45N,Sweden (SE2) - SE2 BZ / MBA,Europe/Stockholm
+Sweden,SWE,SE,SE_3,10Y1001A1001A46L,Sweden (SE3) - SE3 BZ / MBA,Europe/Stockholm
+Sweden,SWE,SE,SE_4,10Y1001A1001A47J,Sweden (SE4) - SE4 BZ / MBA,Europe/Stockholm
+Slovakia,SVK,SK,SK,10YSK-SEPS-----K,Slovakia - SEPS BZ / CA / MBA,Europe/Bratislava
+Slovenia,SVN,SI,SI,10YSI-ELES-----O,Slovenia - ELES BZ / CA / MBA,Europe/Ljubljana
+Turkey,TUR,TR,TR,10YTR-TEIAS----W,Turkey BZ / CA / MBA,Europe/Istanbul
+Ukraine,UKR,UA,UA,10Y1001C--00003F,Ukraine - Ukraine BZ - MBA,Europe/Kiev
+Ukraine,UKR,UA,UA_DOBTPP,10Y1001A1001A869,Ukraine (DobTPP) - Ukraine-DobTPP CTA,Europe/Kiev
+Ukraine,UKR,UA,UA_BEI,10YUA-WEPS-----0,Ukraine (BEI) - Ukraine BEI CTA,Europe/Kiev
+Ukraine,UKR,UA,UA_IPS,10Y1001C--000182,Ukraine (IPS) - Ukraine IPS CTA,Europe/Kiev
+Kosovo,XKX,XK,XK,10Y1001C--00100H,Kosovo - Kosovo/ XK CA / XK BZN,Europe/Rome

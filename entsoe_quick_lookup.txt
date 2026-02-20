@@ -1,0 +1,185 @@
+# ENTSO-E Bidding Zone Quick Lookup Reference
+
+## ISO3 to EIC Code Mapping
+
+```
+ALB → 10YAL-KESH-----5 (Albania)
+AUT → 10YAT-APG------L (Austria)
+BEL → 10YBE----------2 (Belgium)
+BIH → 10YBA-JPCC-----D (Bosnia and Herzegovina)
+BGR → 10YCA-BULGARIA-R (Bulgaria)
+CHE → 10YCH-SWISSGRIDZ (Switzerland)
+CYP → 10YCY-1001A0003J (Cyprus)
+CZE → 10YCZ-CEPS-----N (Czech Republic)
+DEU → 10Y1001A1001A83F (Germany - Aggregated)
+     → 10YDE-VE-------2 (Germany - 50HZ)
+     → 10YDE-RWENET---I (Germany - Amprion)
+     → 10YDE-EON------1 (Germany - TenneT)
+     → 10YDE-ENBW-----N (Germany - TransnetBW)
+DNK → 10Y1001A1001A65H (Denmark - Aggregated)
+     → 10YDK-1--------W (DK1)
+     → 10YDK-2--------M (DK2)
+EST → 10Y1001A1001A39I (Estonia)
+ESP → 10YES-REE------0 (Spain)
+FIN → 10YFI-1--------U (Finland)
+FRA → 10YFR-RTE------C (France)
+GBR → 10YGB----------A (United Kingdom)
+     → 10Y1001C--00098F (GB - IFA)
+     → 17Y0000009369493 (GB - IFA2)
+     → 11Y0-0000-0265-K (GB - ElecLink)
+GEO → 10Y1001A1001B012 (Georgia)
+GRC → 10YGR-HTSO-----Y (Greece)
+HRV → 10YHR-HEP------M (Croatia)
+HUN → 10YHU-MAVIR----U (Hungary)
+ISL → IS (Iceland)
+IRL → 10YIE-1001A00010 (Ireland)
+     → 10Y1001A1001A59C (Ireland - SEM)
+ITA → 10YIT-GRTN-----B (Italy - Aggregated)
+     → 10Y1001A1001A73I (IT-North)
+     → 10Y1001A1001A70O (IT-Centre-North)
+     → 10Y1001A1001A71M (IT-Centre-South)
+     → 10Y1001A1001A788 (IT-South)
+     → 10Y1001A1001A74G (IT-Sardinia)
+     → 10Y1001A1001A75E (IT-Sicily)
+     + 11 more regional zones
+LTU → 10YLT-1001A0008Q (Lithuania)
+LUX → 10YLU-CEGEDEL-NQ (Luxembourg)
+LVA → 10YLV-1001A00074 (Latvia)
+MDA → 10Y1001A1001A990 (Moldova)
+MKD → 10YMK-MEPSO----8 (North Macedonia)
+MLT → 10Y1001A1001A93C (Malta)
+MNE → 10YCS-CG-TSO---S (Montenegro)
+NLD → 10YNL----------L (Netherlands)
+NOR → 10YNO-0--------C (Norway - Aggregated)
+     → 10YNO-1--------2 (NO1)
+     → 10YNO-2--------T (NO2)
+     → 10YNO-3--------J (NO3)
+     → 10YNO-4--------9 (NO4)
+     → 10Y1001A1001A48H (NO5)
+POL → 10YPL-AREA-----S (Poland)
+PRT → 10YPT-REN------W (Portugal)
+ROU → 10YRO-TEL------P (Romania)
+RUS → 10Y1001A1001A49F (Russia)
+SRB → 10YCS-SERBIATSOV (Serbia)
+SVK → 10YSK-SEPS-----K (Slovakia)
+SVN → 10YSI-ELES-----O (Slovenia)
+SWE → 10YSE-1--------K (Sweden - Aggregated)
+     → 10Y1001A1001A44P (SE1)
+     → 10Y1001A1001A45N (SE2)
+     → 10Y1001A1001A46L (SE3)
+     → 10Y1001A1001A47J (SE4)
+TUR → 10YTR-TEIAS----W (Turkey)
+UKR → 10Y1001C--00003F (Ukraine)
+     → 10Y1001A1001A869 (UA-DobTPP)
+     → 10YUA-WEPS-----0 (UA-BEI)
+     → 10Y1001C--000182 (UA-IPS)
+XKX → 10Y1001C--00100H (Kosovo)
+```
+
+## EIC Code to ISO3 Mapping (Selected)
+
+```
+10YAT-APG------L → AUT (Austria)
+10YBE----------2 → BEL (Belgium)
+10YCH-SWISSGRIDZ → CHE (Switzerland)
+10YCZ-CEPS-----N → CZE (Czech Republic)
+10Y1001A1001A83F → DEU (Germany)
+10YDK-1--------W → DNK (Denmark Zone 1)
+10YFR-RTE------C → FRA (France)
+10YGB----------A → GBR (United Kingdom)
+10YGR-HTSO-----Y → GRC (Greece)
+10YHU-MAVIR----U → HUN (Hungary)
+10YIT-GRTN-----B → ITA (Italy)
+10YNL----------L → NLD (Netherlands)
+10YPL-AREA-----S → POL (Poland)
+10YES-REE------0 → ESP (Spain)
+10YSE-1--------K → SWE (Sweden)
+```
+
+## European Countries with ENTSO-E Bidding Zones (45 Total)
+
+### EU Member States (27)
+1. Austria (AUT)
+2. Belgium (BEL)
+3. Bulgaria (BGR)
+4. Croatia (HRV)
+5. Cyprus (CYP)
+6. Czech Republic (CZE)
+7. Denmark (DNK)
+8. Estonia (EST)
+9. Finland (FIN)
+10. France (FRA)
+11. Germany (DEU)
+12. Greece (GRC)
+13. Hungary (HUN)
+14. Ireland (IRL)
+15. Italy (ITA)
+16. Latvia (LVA)
+17. Lithuania (LTU)
+18. Luxembourg (LUX)
+19. Malta (MLT)
+20. Netherlands (NLD)
+21. Poland (POL)
+22. Portugal (PRT)
+23. Romania (ROU)
+24. Slovakia (SVK)
+25. Slovenia (SVN)
+26. Spain (ESP)
+27. Sweden (SWE)
+
+### Non-EU European Countries
+28. Albania (ALB)
+29. Belarus (BLR)
+30. Bosnia and Herzegovina (BIH)
+31. Georgia (GEO)
+32. Iceland (ISL)
+33. Kosovo (XKX)
+34. Moldova (MDA)
+35. Montenegro (MNE)
+36. North Macedonia (MKD)
+37. Norway (NOR)
+38. Russia (RUS) - including Kaliningrad
+39. Serbia (SRB)
+40. Switzerland (CHE)
+41. Turkey (TUR)
+42. Ukraine (UKR)
+43. United Kingdom (GBR)
+
+### Special Cases
+44. Northern Ireland (GBR)
+45. Multiple cross-border zones (DE_AT_LU, DE_LU, PL_CZ)
+
+## Common Usage Patterns
+
+### For API Queries
+```
+# German zones
+DE, DE_50HZ, DE_AMPRION, DE_TENNET, DE_TRANSNET
+
+# Danish zones
+DK_1, DK_2
+
+# Italian zones
+IT, IT_NORD, IT_CNOR, IT_CSUD, IT_SUD, IT_SARD, IT_SICI
+
+# Norwegian zones
+NO_1, NO_2, NO_3, NO_4, NO_5
+
+# Swedish zones
+SE_1, SE_2, SE_3, SE_4
+```
+
+### For Time Series Data
+Use aggregated codes:
+```
+DE (instead of 4 individual TSO zones)
+DK (instead of DK_1, DK_2)
+IT (instead of 17 individual zones)
+NO (instead of NO_1-5)
+SE (instead of SE_1-4)
+```
+
+---
+
+**Last Updated:** February 21, 2026  
+**Source:** ENTSO-E Official Mappings (entsoe-py library)

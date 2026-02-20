@@ -1,0 +1,811 @@
+{
+  "entsoe_bidding_zones": [
+    {
+      "country_name": "Austria",
+      "iso3_code": "AUT",
+      "iso2_code": "AT",
+      "area_code": "AT",
+      "eic_code": "10YAT-APG------L",
+      "description": "Austria, APG BZ / CA / MBA",
+      "timezone": "Europe/Vienna"
+    },
+    {
+      "country_name": "Albania",
+      "iso3_code": "ALB",
+      "iso2_code": "AL",
+      "area_code": "AL",
+      "eic_code": "10YAL-KESH-----5",
+      "description": "Albania, OST BZ / CA / MBA",
+      "timezone": "Europe/Tirane"
+    },
+    {
+      "country_name": "Belarus",
+      "iso3_code": "BLR",
+      "iso2_code": "BY",
+      "area_code": "BY",
+      "eic_code": "10Y1001A1001A51S",
+      "description": "Belarus BZ / CA / MBA",
+      "timezone": "Europe/Minsk"
+    },
+    {
+      "country_name": "Belgium",
+      "iso3_code": "BEL",
+      "iso2_code": "BE",
+      "area_code": "BE",
+      "eic_code": "10YBE----------2",
+      "description": "Belgium, Elia BZ / CA / MBA",
+      "timezone": "Europe/Brussels"
+    },
+    {
+      "country_name": "Bosnia and Herzegovina",
+      "iso3_code": "BIH",
+      "iso2_code": "BA",
+      "area_code": "BA",
+      "eic_code": "10YBA-JPCC-----D",
+      "description": "Bosnia Herzegovina, NOS BiH BZ / CA / MBA",
+      "timezone": "Europe/Sarajevo"
+    },
+    {
+      "country_name": "Bulgaria",
+      "iso3_code": "BGR",
+      "iso2_code": "BG",
+      "area_code": "BG",
+      "eic_code": "10YCA-BULGARIA-R",
+      "description": "Bulgaria, ESO BZ / CA / MBA",
+      "timezone": "Europe/Sofia"
+    },
+    {
+      "country_name": "Switzerland",
+      "iso3_code": "CHE",
+      "iso2_code": "CH",
+      "area_code": "CH",
+      "eic_code": "10YCH-SWISSGRIDZ",
+      "description": "Switzerland, Swissgrid BZ / CA / MBA",
+      "timezone": "Europe/Zurich"
+    },
+    {
+      "country_name": "Cyprus",
+      "iso3_code": "CYP",
+      "iso2_code": "CY",
+      "area_code": "CY",
+      "eic_code": "10YCY-1001A0003J",
+      "description": "Cyprus, Cyprus TSO BZ / CA / MBA",
+      "timezone": "Asia/Nicosia"
+    },
+    {
+      "country_name": "Czech Republic",
+      "iso3_code": "CZE",
+      "iso2_code": "CZ",
+      "area_code": "CZ",
+      "eic_code": "10YCZ-CEPS-----N",
+      "description": "Czech Republic, CEPS BZ / CA / MBA",
+      "timezone": "Europe/Prague"
+    },
+    {
+      "country_name": "Germany",
+      "iso3_code": "DEU",
+      "iso2_code": "DE",
+      "area_code": "DE",
+      "eic_code": "10Y1001A1001A83F",
+      "description": "Germany",
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "country_name": "Germany (50HZ)",
+      "iso3_code": "DEU",
+      "iso2_code": "DE",
+      "area_code": "DE_50HZ",
+      "eic_code": "10YDE-VE-------2",
+      "description": "50Hertz CA, DE(50HzT) BZA",
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "country_name": "Germany (Amprion)",
+      "iso3_code": "DEU",
+      "iso2_code": "DE",
+      "area_code": "DE_AMPRION",
+      "eic_code": "10YDE-RWENET---I",
+      "description": "Amprion CA",
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "country_name": "Germany (TenneT)",
+      "iso3_code": "DEU",
+      "iso2_code": "DE",
+      "area_code": "DE_TENNET",
+      "eic_code": "10YDE-EON------1",
+      "description": "TenneT GER CA",
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "country_name": "Germany (TransnetBW)",
+      "iso3_code": "DEU",
+      "iso2_code": "DE",
+      "area_code": "DE_TRANSNET",
+      "eic_code": "10YDE-ENBW-----N",
+      "description": "TransnetBW CA",
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "country_name": "Germany-Austria-Luxembourg",
+      "iso3_code": "Multiple",
+      "iso2_code": "DE/AT/LU",
+      "area_code": "DE_AT_LU",
+      "eic_code": "10Y1001A1001A63L",
+      "description": "DE-AT-LU BZ",
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "country_name": "Germany-Luxembourg",
+      "iso3_code": "Multiple",
+      "iso2_code": "DE/LU",
+      "area_code": "DE_LU",
+      "eic_code": "10Y1001A1001A82H",
+      "description": "DE-LU BZ / MBA",
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "country_name": "Denmark",
+      "iso3_code": "DNK",
+      "iso2_code": "DK",
+      "area_code": "DK",
+      "eic_code": "10Y1001A1001A65H",
+      "description": "Denmark",
+      "timezone": "Europe/Copenhagen"
+    },
+    {
+      "country_name": "Denmark (DK1)",
+      "iso3_code": "DNK",
+      "iso2_code": "DK",
+      "area_code": "DK_1",
+      "eic_code": "10YDK-1--------W",
+      "description": "DK1 BZ / MBA",
+      "timezone": "Europe/Copenhagen"
+    },
+    {
+      "country_name": "Denmark (DK2)",
+      "iso3_code": "DNK",
+      "iso2_code": "DK",
+      "area_code": "DK_2",
+      "eic_code": "10YDK-2--------M",
+      "description": "DK2 BZ / MBA",
+      "timezone": "Europe/Copenhagen"
+    },
+    {
+      "country_name": "Denmark (Energinet CA)",
+      "iso3_code": "DNK",
+      "iso2_code": "DK",
+      "area_code": "DK_CA",
+      "eic_code": "10Y1001A1001A796",
+      "description": "Denmark, Energinet CA",
+      "timezone": "Europe/Copenhagen"
+    },
+    {
+      "country_name": "Estonia",
+      "iso3_code": "EST",
+      "iso2_code": "EE",
+      "area_code": "EE",
+      "eic_code": "10Y1001A1001A39I",
+      "description": "Estonia, Elering BZ / CA / MBA",
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "country_name": "Spain",
+      "iso3_code": "ESP",
+      "iso2_code": "ES",
+      "area_code": "ES",
+      "eic_code": "10YES-REE------0",
+      "description": "Spain, REE BZ / CA / MBA",
+      "timezone": "Europe/Madrid"
+    },
+    {
+      "country_name": "Finland",
+      "iso3_code": "FIN",
+      "iso2_code": "FI",
+      "area_code": "FI",
+      "eic_code": "10YFI-1--------U",
+      "description": "Finland, Fingrid BZ / CA / MBA",
+      "timezone": "Europe/Helsinki"
+    },
+    {
+      "country_name": "France",
+      "iso3_code": "FRA",
+      "iso2_code": "FR",
+      "area_code": "FR",
+      "eic_code": "10YFR-RTE------C",
+      "description": "France, RTE BZ / CA / MBA",
+      "timezone": "Europe/Paris"
+    },
+    {
+      "country_name": "United Kingdom",
+      "iso3_code": "GBR",
+      "iso2_code": "GB",
+      "area_code": "GB",
+      "eic_code": "10YGB----------A",
+      "description": "National Grid BZ / CA / MBA",
+      "timezone": "Europe/London"
+    },
+    {
+      "country_name": "United Kingdom (IFA)",
+      "iso3_code": "GBR",
+      "iso2_code": "GB",
+      "area_code": "GB_IFA",
+      "eic_code": "10Y1001C--00098F",
+      "description": "GB(IFA) BZN",
+      "timezone": "Europe/London"
+    },
+    {
+      "country_name": "United Kingdom (IFA2)",
+      "iso3_code": "GBR",
+      "iso2_code": "GB",
+      "area_code": "GB_IFA2",
+      "eic_code": "17Y0000009369493",
+      "description": "GB(IFA2) BZ",
+      "timezone": "Europe/London"
+    },
+    {
+      "country_name": "United Kingdom (ElecLink)",
+      "iso3_code": "GBR",
+      "iso2_code": "GB",
+      "area_code": "GB_ELECLINK",
+      "eic_code": "11Y0-0000-0265-K",
+      "description": "GB(ElecLink) BZN",
+      "timezone": "Europe/London"
+    },
+    {
+      "country_name": "United Kingdom (Full)",
+      "iso3_code": "GBR",
+      "iso2_code": "GB",
+      "area_code": "UK",
+      "eic_code": "10Y1001A1001A92E",
+      "description": "United Kingdom",
+      "timezone": "Europe/London"
+    },
+    {
+      "country_name": "Georgia",
+      "iso3_code": "GEO",
+      "iso2_code": "GE",
+      "area_code": "GE",
+      "eic_code": "10Y1001A1001B012",
+      "description": "Georgia",
+      "timezone": "Asia/Tbilisi"
+    },
+    {
+      "country_name": "Greece",
+      "iso3_code": "GRC",
+      "iso2_code": "GR",
+      "area_code": "GR",
+      "eic_code": "10YGR-HTSO-----Y",
+      "description": "Greece, IPTO BZ / CA / MBA",
+      "timezone": "Europe/Athens"
+    },
+    {
+      "country_name": "Croatia",
+      "iso3_code": "HRV",
+      "iso2_code": "HR",
+      "area_code": "HR",
+      "eic_code": "10YHR-HEP------M",
+      "description": "Croatia, HOPS BZ / CA / MBA",
+      "timezone": "Europe/Zagreb"
+    },
+    {
+      "country_name": "Hungary",
+      "iso3_code": "HUN",
+      "iso2_code": "HU",
+      "area_code": "HU",
+      "eic_code": "10YHU-MAVIR----U",
+      "description": "Hungary, MAVIR CA / BZ / MBA",
+      "timezone": "Europe/Budapest"
+    },
+    {
+      "country_name": "Iceland",
+      "iso3_code": "ISL",
+      "iso2_code": "IS",
+      "area_code": "IS",
+      "eic_code": "IS",
+      "description": "Iceland",
+      "timezone": "Atlantic/Reykjavik"
+    },
+    {
+      "country_name": "Ireland",
+      "iso3_code": "IRL",
+      "iso2_code": "IE",
+      "area_code": "IE",
+      "eic_code": "10YIE-1001A00010",
+      "description": "Ireland, EirGrid CA",
+      "timezone": "Europe/Dublin"
+    },
+    {
+      "country_name": "Ireland (SEM)",
+      "iso3_code": "IRL",
+      "iso2_code": "IE",
+      "area_code": "IE_SEM",
+      "eic_code": "10Y1001A1001A59C",
+      "description": "Ireland (SEM) BZ / MBA",
+      "timezone": "Europe/Dublin"
+    },
+    {
+      "country_name": "Northern Ireland",
+      "iso3_code": "GBR",
+      "iso2_code": "GB",
+      "area_code": "NIE",
+      "eic_code": "10Y1001A1001A016",
+      "description": "Northern Ireland, SONI CA",
+      "timezone": "Europe/London"
+    },
+    {
+      "country_name": "Italy",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT",
+      "eic_code": "10YIT-GRTN-----B",
+      "description": "Italy, IT CA / MBA",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (Calabria)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_CALA",
+      "eic_code": "10Y1001C--00096J",
+      "description": "IT-Calabria BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (Brindisi)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_BRNN",
+      "eic_code": "10Y1001A1001A699",
+      "description": "IT-Brindisi BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (Centre-North)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_CNOR",
+      "eic_code": "10Y1001A1001A70O",
+      "description": "IT-Centre-North BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (Centre-South)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_CSUD",
+      "eic_code": "10Y1001A1001A71M",
+      "description": "IT-Centre-South BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (Foggia)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_FOGN",
+      "eic_code": "10Y1001A1001A72K",
+      "description": "IT-Foggia BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (Greece)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_GR",
+      "eic_code": "10Y1001A1001A66F",
+      "description": "IT-GR BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (North)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_NORD",
+      "eic_code": "10Y1001A1001A73I",
+      "description": "IT-North BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (North-AT)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_NORD_AT",
+      "eic_code": "10Y1001A1001A80L",
+      "description": "IT-North-AT BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (North-CH)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_NORD_CH",
+      "eic_code": "10Y1001A1001A68B",
+      "description": "IT-North-CH BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (North-FR)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_NORD_FR",
+      "eic_code": "10Y1001A1001A81J",
+      "description": "IT-North-FR BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (North-SI)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_NORD_SI",
+      "eic_code": "10Y1001A1001A67D",
+      "description": "IT-North-SI BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (Priolo)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_PRGP",
+      "eic_code": "10Y1001A1001A76C",
+      "description": "IT-Priolo BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (Rossano)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_ROSN",
+      "eic_code": "10Y1001A1001A77A",
+      "description": "IT-Rossano BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (Sardinia)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_SARD",
+      "eic_code": "10Y1001A1001A74G",
+      "description": "IT-Sardinia BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (Sicily)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_SICI",
+      "eic_code": "10Y1001A1001A75E",
+      "description": "IT-Sicily BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Italy (South)",
+      "iso3_code": "ITA",
+      "iso2_code": "IT",
+      "area_code": "IT_SUD",
+      "eic_code": "10Y1001A1001A788",
+      "description": "IT-South BZ",
+      "timezone": "Europe/Rome"
+    },
+    {
+      "country_name": "Kaliningrad (Russia)",
+      "iso3_code": "RUS",
+      "iso2_code": "RU",
+      "area_code": "RU_KGD",
+      "eic_code": "10Y1001A1001A50U",
+      "description": "Kaliningrad BZ / CA / MBA",
+      "timezone": "Europe/Kaliningrad"
+    },
+    {
+      "country_name": "Latvia",
+      "iso3_code": "LVA",
+      "iso2_code": "LV",
+      "area_code": "LV",
+      "eic_code": "10YLV-1001A00074",
+      "description": "Latvia, AST BZ / CA / MBA",
+      "timezone": "Europe/Riga"
+    },
+    {
+      "country_name": "Lithuania",
+      "iso3_code": "LTU",
+      "iso2_code": "LT",
+      "area_code": "LT",
+      "eic_code": "10YLT-1001A0008Q",
+      "description": "Lithuania, Litgrid BZ / CA / MBA",
+      "timezone": "Europe/Vilnius"
+    },
+    {
+      "country_name": "Luxembourg",
+      "iso3_code": "LUX",
+      "iso2_code": "LU",
+      "area_code": "LU",
+      "eic_code": "10YLU-CEGEDEL-NQ",
+      "description": "Luxembourg, CREOS CA",
+      "timezone": "Europe/Luxembourg"
+    },
+    {
+      "country_name": "Luxembourg (BZN)",
+      "iso3_code": "LUX",
+      "iso2_code": "LU",
+      "area_code": "LU_BZN",
+      "eic_code": "10Y1001A1001A82H",
+      "description": "Luxembourg",
+      "timezone": "Europe/Luxembourg"
+    },
+    {
+      "country_name": "North Macedonia",
+      "iso3_code": "MKD",
+      "iso2_code": "MK",
+      "area_code": "MK",
+      "eic_code": "10YMK-MEPSO----8",
+      "description": "Former Yugoslav Republic of Macedonia, MEPSO BZ / CA / MBA",
+      "timezone": "Europe/Skopje"
+    },
+    {
+      "country_name": "Malta",
+      "iso3_code": "MLT",
+      "iso2_code": "MT",
+      "area_code": "MT",
+      "eic_code": "10Y1001A1001A93C",
+      "description": "Malta, Malta BZ / CA / MBA",
+      "timezone": "Europe/Malta"
+    },
+    {
+      "country_name": "Montenegro",
+      "iso3_code": "MNE",
+      "iso2_code": "ME",
+      "area_code": "ME",
+      "eic_code": "10YCS-CG-TSO---S",
+      "description": "Montenegro, CGES BZ / CA / MBA",
+      "timezone": "Europe/Podgorica"
+    },
+    {
+      "country_name": "Moldova",
+      "iso3_code": "MDA",
+      "iso2_code": "MD",
+      "area_code": "MD",
+      "eic_code": "10Y1001A1001A990",
+      "description": "Republic of Moldova, Moldelectica BZ/CA/MBA",
+      "timezone": "Europe/Chisinau"
+    },
+    {
+      "country_name": "Netherlands",
+      "iso3_code": "NLD",
+      "iso2_code": "NL",
+      "area_code": "NL",
+      "eic_code": "10YNL----------L",
+      "description": "Netherlands, TenneT NL BZ / CA / MBA",
+      "timezone": "Europe/Amsterdam"
+    },
+    {
+      "country_name": "Norway",
+      "iso3_code": "NOR",
+      "iso2_code": "NO",
+      "area_code": "NO",
+      "eic_code": "10YNO-0--------C",
+      "description": "Norway, Norway MBA, Stattnet CA",
+      "timezone": "Europe/Oslo"
+    },
+    {
+      "country_name": "Norway (NO1)",
+      "iso3_code": "NOR",
+      "iso2_code": "NO",
+      "area_code": "NO_1",
+      "eic_code": "10YNO-1--------2",
+      "description": "NO1 BZ / MBA",
+      "timezone": "Europe/Oslo"
+    },
+    {
+      "country_name": "Norway (NO2)",
+      "iso3_code": "NOR",
+      "iso2_code": "NO",
+      "area_code": "NO_2",
+      "eic_code": "10YNO-2--------T",
+      "description": "NO2 BZ / MBA",
+      "timezone": "Europe/Oslo"
+    },
+    {
+      "country_name": "Norway (NO3)",
+      "iso3_code": "NOR",
+      "iso2_code": "NO",
+      "area_code": "NO_3",
+      "eic_code": "10YNO-3--------J",
+      "description": "NO3 BZ / MBA",
+      "timezone": "Europe/Oslo"
+    },
+    {
+      "country_name": "Norway (NO4)",
+      "iso3_code": "NOR",
+      "iso2_code": "NO",
+      "area_code": "NO_4",
+      "eic_code": "10YNO-4--------9",
+      "description": "NO4 BZ / MBA",
+      "timezone": "Europe/Oslo"
+    },
+    {
+      "country_name": "Norway (NO5)",
+      "iso3_code": "NOR",
+      "iso2_code": "NO",
+      "area_code": "NO_5",
+      "eic_code": "10Y1001A1001A48H",
+      "description": "NO5 BZ / MBA",
+      "timezone": "Europe/Oslo"
+    },
+    {
+      "country_name": "Poland",
+      "iso3_code": "POL",
+      "iso2_code": "PL",
+      "area_code": "PL",
+      "eic_code": "10YPL-AREA-----S",
+      "description": "Poland, PSE SA BZ / BZA / CA / MBA",
+      "timezone": "Europe/Warsaw"
+    },
+    {
+      "country_name": "Portugal",
+      "iso3_code": "PRT",
+      "iso2_code": "PT",
+      "area_code": "PT",
+      "eic_code": "10YPT-REN------W",
+      "description": "Portugal, REN BZ / CA / MBA",
+      "timezone": "Europe/Lisbon"
+    },
+    {
+      "country_name": "Romania",
+      "iso3_code": "ROU",
+      "iso2_code": "RO",
+      "area_code": "RO",
+      "eic_code": "10YRO-TEL------P",
+      "description": "Romania, Transelectrica BZ / CA / MBA",
+      "timezone": "Europe/Bucharest"
+    },
+    {
+      "country_name": "Russia",
+      "iso3_code": "RUS",
+      "iso2_code": "RU",
+      "area_code": "RU",
+      "eic_code": "10Y1001A1001A49F",
+      "description": "Russia BZ / CA / MBA",
+      "timezone": "Europe/Moscow"
+    },
+    {
+      "country_name": "Serbia",
+      "iso3_code": "SRB",
+      "iso2_code": "RS",
+      "area_code": "RS",
+      "eic_code": "10YCS-SERBIATSOV",
+      "description": "Serbia, EMS BZ / CA / MBA",
+      "timezone": "Europe/Belgrade"
+    },
+    {
+      "country_name": "Sweden",
+      "iso3_code": "SWE",
+      "iso2_code": "SE",
+      "area_code": "SE",
+      "eic_code": "10YSE-1--------K",
+      "description": "Sweden, Sweden MBA, SvK CA",
+      "timezone": "Europe/Stockholm"
+    },
+    {
+      "country_name": "Sweden (SE1)",
+      "iso3_code": "SWE",
+      "iso2_code": "SE",
+      "area_code": "SE_1",
+      "eic_code": "10Y1001A1001A44P",
+      "description": "SE1 BZ / MBA",
+      "timezone": "Europe/Stockholm"
+    },
+    {
+      "country_name": "Sweden (SE2)",
+      "iso3_code": "SWE",
+      "iso2_code": "SE",
+      "area_code": "SE_2",
+      "eic_code": "10Y1001A1001A45N",
+      "description": "SE2 BZ / MBA",
+      "timezone": "Europe/Stockholm"
+    },
+    {
+      "country_name": "Sweden (SE3)",
+      "iso3_code": "SWE",
+      "iso2_code": "SE",
+      "area_code": "SE_3",
+      "eic_code": "10Y1001A1001A46L",
+      "description": "SE3 BZ / MBA",
+      "timezone": "Europe/Stockholm"
+    },
+    {
+      "country_name": "Sweden (SE4)",
+      "iso3_code": "SWE",
+      "iso2_code": "SE",
+      "area_code": "SE_4",
+      "eic_code": "10Y1001A1001A47J",
+      "description": "SE4 BZ / MBA",
+      "timezone": "Europe/Stockholm"
+    },
+    {
+      "country_name": "Slovakia",
+      "iso3_code": "SVK",
+      "iso2_code": "SK",
+      "area_code": "SK",
+      "eic_code": "10YSK-SEPS-----K",
+      "description": "Slovakia, SEPS BZ / CA / MBA",
+      "timezone": "Europe/Bratislava"
+    },
+    {
+      "country_name": "Slovenia",
+      "iso3_code": "SVN",
+      "iso2_code": "SI",
+      "area_code": "SI",
+      "eic_code": "10YSI-ELES-----O",
+      "description": "Slovenia, ELES BZ / CA / MBA",
+      "timezone": "Europe/Ljubljana"
+    },
+    {
+      "country_name": "Turkey",
+      "iso3_code": "TUR",
+      "iso2_code": "TR",
+      "area_code": "TR",
+      "eic_code": "10YTR-TEIAS----W",
+      "description": "Turkey BZ / CA / MBA",
+      "timezone": "Europe/Istanbul"
+    },
+    {
+      "country_name": "Ukraine",
+      "iso3_code": "UKR",
+      "iso2_code": "UA",
+      "area_code": "UA",
+      "eic_code": "10Y1001C--00003F",
+      "description": "Ukraine, Ukraine BZ, MBA",
+      "timezone": "Europe/Kiev"
+    },
+    {
+      "country_name": "Ukraine (DobTPP)",
+      "iso3_code": "UKR",
+      "iso2_code": "UA",
+      "area_code": "UA_DOBTPP",
+      "eic_code": "10Y1001A1001A869",
+      "description": "Ukraine-DobTPP CTA",
+      "timezone": "Europe/Kiev"
+    },
+    {
+      "country_name": "Ukraine (BEI)",
+      "iso3_code": "UKR",
+      "iso2_code": "UA",
+      "area_code": "UA_BEI",
+      "eic_code": "10YUA-WEPS-----0",
+      "description": "Ukraine BEI CTA",
+      "timezone": "Europe/Kiev"
+    },
+    {
+      "country_name": "Ukraine (IPS)",
+      "iso3_code": "UKR",
+      "iso2_code": "UA",
+      "area_code": "UA_IPS",
+      "eic_code": "10Y1001C--000182",
+      "description": "Ukraine IPS CTA",
+      "timezone": "Europe/Kiev"
+    },
+    {
+      "country_name": "Kosovo",
+      "iso3_code": "XKX",
+      "iso2_code": "XK",
+      "area_code": "XK",
+      "eic_code": "10Y1001C--00100H",
+      "description": "Kosovo/ XK CA / XK BZN",
+      "timezone": "Europe/Rome"
+    }
+  ],
+  "summary": {
+    "total_bidding_zones": 101,
+    "total_countries": 45,
+    "last_updated": "2026-02-21",
+    "source": "ENTSO-E entsoe-py library (EnergieID/entsoe-py GitHub)",
+    "notes": [
+      "EIC codes follow the ISO 15118:2014 standard for Unique Identification Code (UIC)",
+      "Format: 10Y[Country code]XXXXX or other variations",
+      "Some countries have multiple bidding zones (e.g., Germany, Italy, Sweden, Norway, Denmark)",
+      "Some zones are shared between countries (e.g., DE_AT_LU, DE_LU)",
+      "Integrated bidding zones: Czech Republic, Germany, and Slovakia (CZ_DE_SK)",
+      "Regional aggregations: CWE (Central Western Europe)",
+      "BZ = Bidding Zone, CA = Control Area, MBA = Market Balance Area, BZA = Bidding Zone Area, CTA = Control Transmission Area"
+    ]
+  }
+}

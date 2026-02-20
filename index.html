@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Áramár Monitor</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
     <style>
         body { font-family: sans-serif; padding: 20px; background: #eee; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+        .container { max-width: 1000px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
         .error-msg { color: red; font-weight: bold; margin: 10px 0; display: none; }
         .loading { display: none; color: blue; }
     </style>
@@ -16,37 +18,111 @@
 <div class="container">
     <h1>Áramár Monitor</h1>
     
-    <div>
+    <div style="margin-bottom:10px;">
         Ettől: <input type="date" id="startDate" value="2026-02-18">
         Eddig: <input type="date" id="endDate" value="2026-02-20">
         <button onclick="updateChart()">Lekérés</button>
+        <span id="selectedCountry" style="margin-left:20px; font-weight:bold;">Ország: Magyarország (HUN)</span>
     </div>
 
     <div id="error" class="error-msg">Hiba történt a lekérés során!</div>
     <div id="loader" class="loading">Adatok betöltése...</div>
 
-    <canvas id="priceChart" style="margin-top:20px;"></canvas>
+    <!-- flexible layout: map on the left, chart on the right -->
+    <div style="display:flex; gap:20px;">
+        <div id="map" style="width:600px; height:400px; border:1px solid #999;">Töltés...</div>
+        <div style="width:500px;">
+            <canvas id="priceChart" width="500" height="300"></canvas>
+        </div>
+    </div>
 </div>
 
+<!-- Modal for zone selection -->
+<div id="zoneModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000; justify-content:center; align-items:center;">
+    <div style="background:white; padding:20px; border-radius:10px; max-width:400px; box-shadow:0 2px 10px rgba(0,0,0,0.3);">
+        <h3 id="zoneModalTitle">Válassz egy zónát</h3>
+        <div id="zoneList" style="margin:15px 0;"></div>
+        <button onclick="closeZoneModal()" style="width:100%; padding:10px; background:#ddd; border:none; border-radius:5px; cursor:pointer;">Mégsem</button>
+    </div>
+</div>
 <script>
     let myChart;
+
+    // general-purpose chart updater, augmented later to include country param
+
+
+    // currently selected ISO3 code and zone (default to HUN)
+    let selectedIso3 = 'HUN';
+    let selectedName = 'Magyarország';
+    let selectedZoneCode = null;  // null = use default from country lookup
+    let isMultiZoneSelection = false;  // flag to track if zone code is from popup
+
+    // List of countries with multiple bidding zones
+    const multiZoneCountries = ['DEU', 'DNK', 'NOR', 'SWE', 'ITA', 'UKR', 'GBR', 'IRL'];
+
+    async function showZoneSelector(iso3) {
+        //"""Fetch and display zones for a multi-zone country."""
+        try {
+            const response = await fetch(`http://127.0.0.1:5000/api/zones/${iso3}`);
+            if (!response.ok) throw new Error('Zone list not found');
+            const data = await response.json();
+            
+            const zoneList = document.getElementById('zoneList');
+            zoneList.innerHTML = '';
+            
+            data.zones.forEach(zone => {
+                const btn = document.createElement('button');
+                btn.innerText = zone.name;
+                btn.style.display = 'block';
+                btn.style.width = '100%';
+                btn.style.padding = '10px';
+                btn.style.marginBottom = '5px';
+                btn.style.background = '#007bff';
+                btn.style.color = 'white';
+                btn.style.border = 'none';
+                btn.style.borderRadius = '5px';
+                btn.style.cursor = 'pointer';
+                btn.onclick = () => {
+                    selectedZoneCode = zone.code;
+                    isMultiZoneSelection = true;
+                    closeZoneModal();
+                    updateChart();
+                };
+                zoneList.appendChild(btn);
+            });
+            
+            document.getElementById('zoneModalTitle').innerText = `${selectedName} - Válassz zónát`;
+            document.getElementById('zoneModal').style.display = 'flex';
+        } catch (err) {
+            console.error('Zone selector error:', err);
+            alert('Hiba a zónalista betöltésénél');
+        }
+    }
+
+    function closeZoneModal() {
+        document.getElementById('zoneModal').style.display = 'none';
+    }
 
     async function updateChart() {
         const start = document.getElementById('startDate').value;
         const end = document.getElementById('endDate').value;
         const errorDiv = document.getElementById('error');
         const loader = document.getElementById('loader');
+        const countrySpan = document.getElementById('selectedCountry');
 
         errorDiv.style.display = 'none';
         loader.style.display = 'block';
 
         try {
-            const url = `http://127.0.0.1:5000/api/prices?start=${start}&end=${end}`;
+            let url = `http://127.0.0.1:5000/api/prices?start=${start}&end=${end}&country=${selectedIso3}`;
+            // Only include zone parameter if it was selected from multi-zone popup (has EIC format)
+            if (isMultiZoneSelection && selectedZoneCode) {
+                url += `&zone=${selectedZoneCode}`;
+            }
             console.log("Hívás:", url);
 
             const response = await fetch(url);
             if (!response.ok) throw new Error('Szerver hiba');
-            
             const data = await response.json();
             loader.style.display = 'none';
 
@@ -70,6 +146,8 @@
                     }]
                 }
             });
+
+            countrySpan.innerText = `Ország: ${selectedName} (${selectedIso3})`;
         } catch (err) {
             loader.style.display = 'none';
             errorDiv.style.display = 'block';
@@ -78,8 +156,80 @@
         }
     }
 
+    // setup map and interaction
+    function initMap() {
+        console.log('initMap called');
+        const map = L.map('map').setView([54, 15], 4);  // Europe centered view
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        let highlightLayer;
+        fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
+            .then(r => {
+                if (!r.ok) throw new Error('GeoJSON fetch failed ' + r.status);
+                return r.json();
+            })
+            .then(geojson => {
+                console.log('geojson loaded');
+                // Filter to European countries only
+                const europeanCodes = [
+                    'ALB', 'AND', 'ARM', 'AUT', 'AZE', 'BLR', 'BEL', 'BIH', 'BGR', 'HRV', 'CYP', 'CZE',
+                    'DNK', 'EST', 'FIN', 'FRA', 'GEO', 'DEU', 'GRC', 'HUN', 'ISL', 'IRL', 'ITA', 'XKX',
+                    'LVA', 'LIE', 'LTU', 'LUX', 'MKD', 'MLT', 'MDA', 'MCO', 'MNE', 'NLD', 'NOR', 'POL',
+                    'PRT', 'ROU', 'RUS', 'SMR', 'SRB', 'SVK', 'SVN', 'ESP', 'SWE', 'CHE', 'UKR', 'GBR'
+                ];
+                
+                const filteredGeojson = {
+                    type: 'FeatureCollection',
+                    features: geojson.features.filter(f => europeanCodes.includes(f.id))
+                };
+
+                const geoLayer = L.geoJSON(filteredGeojson, {
+                    style: {color: '#666', weight: 1, fillOpacity: 0.2},
+                    onEachFeature: (feature, layer) => {
+                        layer.on('click', () => {
+                            // clear previous highlight
+                            if (highlightLayer) {
+                                highlightLayer.setStyle({fillOpacity: 0.2});
+                            }
+                            highlightLayer = layer;
+                            layer.setStyle({fillOpacity: 0.6});
+
+                            selectedIso3 = feature.id;
+                            selectedName = feature.properties.name || selectedIso3;
+                            
+                            // Check if this country has multiple zones
+                            if (multiZoneCountries.includes(selectedIso3)) {
+                                showZoneSelector(selectedIso3);
+                            } else {
+                                // Single zone: clear zone flags and let backend use default
+                                selectedZoneCode = null;
+                                isMultiZoneSelection = false;
+                                updateChart();
+                            }
+                        });
+                    }
+                }).addTo(map);
+
+                // highlight the default country (HUN) on load
+                geoLayer.eachLayer(l => {
+                    if (l.feature && l.feature.id === 'HUN') {
+                        l.fire('click');
+                    }
+                });
+            })
+            .catch(err => {
+                console.error('map geojson error', err);
+                document.getElementById('map').innerText = 'Térkép betöltési hiba – nézd a konzolt.';
+            });
+    }
+
     // Automatikus indítás az első betöltésnél
-    window.onload = updateChart;
+    window.onload = () => {
+        initMap();
+        updateChart();
+    };
 </script>
 </body>
 </html>
