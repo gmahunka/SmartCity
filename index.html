@@ -19,10 +19,10 @@
     <h1>Áramár Monitor</h1>
     
     <div style="margin-bottom:10px;">
-        Ettől: <input type="date" id="startDate" value="2026-02-18">
-        Eddig: <input type="date" id="endDate" value="2026-02-20">
+        Ettől: <input type="date" id="startDate">
+        Eddig: <input type="date" id="endDate">
         <button onclick="updateChart()">Lekérés</button>
-        <span id="selectedCountry" style="margin-left:20px; font-weight:bold;">Ország: Magyarország (HUN)</span>
+        <span id="selectedCountry" style="margin-left:20px; font-weight:bold;">Ország: Magyarország (HU)</span>
     </div>
 
     <div id="error" class="error-msg">Hiba történt a lekérés során!</div>
@@ -51,19 +51,29 @@
     // general-purpose chart updater, augmented later to include country param
 
 
-    // currently selected ISO3 code and zone (default to HUN)
+    // currently selected ISO3/ISO2 codes and zone (default to HUN/HU)
     let selectedIso3 = 'HUN';
+    let selectedIso2 = 'HU';
     let selectedName = 'Magyarország';
     let selectedZoneCode = null;  // null = use default from country lookup
     let isMultiZoneSelection = false;  // flag to track if zone code is from popup
 
-    // List of countries with multiple bidding zones
-    const multiZoneCountries = ['DEU', 'DNK', 'NOR', 'SWE', 'ITA', 'UKR', 'GBR', 'IRL'];
+    const ISO3_TO_ISO2 = {
+        ALB: 'AL', AND: 'AD', ARM: 'AM', AUT: 'AT', AZE: 'AZ', BLR: 'BY', BEL: 'BE', BIH: 'BA',
+        BGR: 'BG', HRV: 'HR', CYP: 'CY', CZE: 'CZ', DNK: 'DK', EST: 'EE', FIN: 'FI', FRA: 'FR',
+        GEO: 'GE', DEU: 'DE', GRC: 'GR', HUN: 'HU', ISL: 'IS', IRL: 'IE', ITA: 'IT', XKX: 'XK',
+        LVA: 'LV', LIE: 'LI', LTU: 'LT', LUX: 'LU', MKD: 'MK', MLT: 'MT', MDA: 'MD', MCO: 'MC',
+        MNE: 'ME', NLD: 'NL', NOR: 'NO', POL: 'PL', PRT: 'PT', ROU: 'RO', RUS: 'RU', SMR: 'SM',
+        SRB: 'RS', SVK: 'SK', SVN: 'SI', ESP: 'ES', SWE: 'SE', CHE: 'CH', UKR: 'UA', GBR: 'GB'
+    };
 
-    async function showZoneSelector(iso3) {
+    // List of countries with multiple bidding zones (ISO2)
+    const multiZoneCountries = ['DE', 'DK', 'NO', 'SE', 'IT', 'UA', 'GB'];
+
+    async function showZoneSelector(iso2) {
         //"""Fetch and display zones for a multi-zone country."""
         try {
-            const response = await fetch(`http://127.0.0.1:5000/api/zones/${iso3}`);
+            const response = await fetch(`http://127.0.0.1:5000/api/zones/${iso2}`);
             if (!response.ok) throw new Error('Zone list not found');
             const data = await response.json();
             
@@ -114,7 +124,7 @@
         loader.style.display = 'block';
 
         try {
-            let url = `http://127.0.0.1:5000/api/prices?start=${start}&end=${end}&country=${selectedIso3}`;
+            let url = `http://127.0.0.1:5000/api/prices?start=${start}&end=${end}&country=${selectedIso2}`;
             // Only include zone parameter if it was selected from multi-zone popup (has EIC format)
             if (isMultiZoneSelection && selectedZoneCode) {
                 url += `&zone=${selectedZoneCode}`;
@@ -147,7 +157,7 @@
                 }
             });
 
-            countrySpan.innerText = `Ország: ${selectedName} (${selectedIso3})`;
+            countrySpan.innerText = `Ország: ${selectedName} (${selectedIso2})`;
         } catch (err) {
             loader.style.display = 'none';
             errorDiv.style.display = 'block';
@@ -197,11 +207,12 @@
                             layer.setStyle({fillOpacity: 0.6});
 
                             selectedIso3 = feature.id;
+                            selectedIso2 = ISO3_TO_ISO2[selectedIso3] || selectedIso3;
                             selectedName = feature.properties.name || selectedIso3;
                             
                             // Check if this country has multiple zones
-                            if (multiZoneCountries.includes(selectedIso3)) {
-                                showZoneSelector(selectedIso3);
+                            if (multiZoneCountries.includes(selectedIso2)) {
+                                showZoneSelector(selectedIso2);
                             } else {
                                 // Single zone: clear zone flags and let backend use default
                                 selectedZoneCode = null;
@@ -227,6 +238,11 @@
 
     // Automatikus indítás az első betöltésnél
     window.onload = () => {
+        // Set date inputs to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('startDate').value = today;
+        document.getElementById('endDate').value = today;
+        
         initMap();
         updateChart();
     };
